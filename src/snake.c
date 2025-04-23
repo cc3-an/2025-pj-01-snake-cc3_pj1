@@ -49,17 +49,12 @@ int main(int argc, char* argv[]) {
   // (esta ya ha sido creada en snakes_utils.h) para agregar comida al
   // tablero)
   update_state(state, deterministic_food);
-  // Write updated board to file or stdout
-  // Escribir el tablero actualizado al archivo o stdout
   if (out_filename != NULL) {
-    // TODO: Guardar el tablero en out_filename
     save_board(state, out_filename);
   } else {
-    // TODO: Imprimir el tablero a stdout
     print_board(state, stdout);
   }
 
-  // TODO: Liberen el estado creado
   free_state(state);
   return 0;
 }
